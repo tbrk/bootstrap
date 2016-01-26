@@ -46,3 +46,10 @@ twbsconfig.yml
 # Folders to ignore
 node_modules
 js/coverage
+
+# Custom ignores
+dist
+docs/assets/css/docs.min.css
+docs/assets/css/docs.min.css.map
+docs/dist
+
