@@ -123,6 +123,12 @@ ul.lessgap {
   margin-top: -.6em;
 }
 
+
+a.anchorjs-link {
+  text-decoration: none !important;
+  transition: all .25s linear;
+}
+
 kbd {
   display: inline-block;
   margin: 0 .1em;
