@@ -19,6 +19,8 @@ div.tp-content-container {
   @include media-breakpoint-down(sm) {
     @include make-col-span(12);
   }
+
+  // max-width: 60em;
 }
 
 // Printing pages
@@ -98,7 +100,7 @@ div.authors {
   max-width: 38em;
 }
 
-div.tp-container {
+div.in-text-wider {
   max-width: 48em;
 }
 
