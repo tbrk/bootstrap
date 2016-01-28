@@ -98,8 +98,8 @@ div.authors {
   max-width: 38em;
 }
 div.author {
-    display: inline;
-    white-space: nowrap;
+  display: inline;
+  white-space: nowrap;
 }
 
 div.in-text-wider {
@@ -439,7 +439,7 @@ div.tp-navbar {
 }
 
 ul.tp-nav {
-    min-width: 900px; // stop overflow
+  min-width: 900px; // stop overflow
 }
 
 div.tp-all-inner {
@@ -449,9 +449,13 @@ div.tp-all-inner {
 }
 
 a.nav-link {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    color: white !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #fff !important;
+}
+
+.tp-navbar-home {
+  font-weight: bold !important;
 }
 
 // Wrapper for page content to push down footer
