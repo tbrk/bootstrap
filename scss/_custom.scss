@@ -442,6 +442,7 @@ ul.tp-nav {
   min-width: 900px; // stop overflow
 }
 
+// ensure that anchors align below the navbar
 *[id] {
   @include media-breakpoint-down(sm) {
     padding-top: $tp-navbar-height;
