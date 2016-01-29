@@ -442,6 +442,13 @@ ul.tp-nav {
   min-width: 900px; // stop overflow
 }
 
+*[id] {
+  @include media-breakpoint-down(sm) {
+    padding-top: $tp-navbar-height;
+    margin-top: -$tp-navbar-height;
+  }
+}
+
 div.tp-all-inner {
   @include media-breakpoint-down(sm) {
     padding-top: $tp-navbar-height;
