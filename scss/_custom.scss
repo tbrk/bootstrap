@@ -327,8 +327,9 @@ div.paper div.keywords span {
   font-style: normal;
   font-weight: bold;
 }
-div.paper div.keywords {
+div.paper div.keywords span.keywords {
   font-style: italic;
+  font-weight: normal;
 }
 div.notelist ul {
   padding-left: 1.2em;
