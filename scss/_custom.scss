@@ -91,6 +91,7 @@ dt,
 dd,
 .table td,
 div.keywords,
+div.publisher,
 img,
 div.centered-in-text,
 .in-text,
@@ -321,7 +322,6 @@ div.paper div.date {
 }
 div.paper div.keywords {
   margin-top: 1em;
-  margin-bottom: 1em;
 }
 div.paper div.keywords span {
   font-style: normal;
@@ -330,6 +330,18 @@ div.paper div.keywords span {
 div.paper div.keywords span.keywords {
   font-style: italic;
   font-weight: normal;
+}
+div.publisher {
+  margin-bottom: 1em;
+
+  span.publisher-label {
+    font-style: normal;
+    font-weight: bold;
+  }
+  span.publisher {
+    font-style: italic;
+    font-weight: normal;
+  }
 }
 div.notelist ul {
   padding-left: 1.2em;
