@@ -71,6 +71,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+<<<<<<< HEAD
   jekyll (~> 3.8.3)
   jekyll-redirect-from (~> 0.14.0)
   jekyll-sitemap (~> 1.2.0)
@@ -78,3 +79,10 @@ DEPENDENCIES
 
 BUNDLED WITH
    1.16.2
+=======
+  jekyll (~> 3.0.1)
+  jekyll-redirect-from (~> 0.9.0)
+  jekyll-sitemap (~> 0.9.0)
+  sass (~> 3.4.19)
+  scss_lint (~> 0.43)
+>>>>>>> Finetune display of Journal numbers
