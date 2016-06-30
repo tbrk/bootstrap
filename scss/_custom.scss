@@ -121,6 +121,14 @@ ul.mainitems li {
   margin-bottom: 1em;
 }
 
+ul.linklist li {
+  @include media-breakpoint-down(xs) {
+    font-size: larger;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
 ol.lessgap,
 ul.lessgap {
   margin-top: -.6em;
