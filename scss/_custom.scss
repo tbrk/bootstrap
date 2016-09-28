@@ -336,7 +336,12 @@ div.paper div.date {
 }
 div.paper div.keywords {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
+div.paper div.keywords + div.publisher {
+  margin-top: -1em;
+}
+
 div.paper div.keywords span {
   font-style: normal;
   font-weight: bold;
