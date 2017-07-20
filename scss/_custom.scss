@@ -2,3 +2,71 @@
 //
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
+
+.photoleft, .photoright, .photocenter {
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.photoleft {
+  @include media-breakpoint-up(md) {
+    float: left;
+  }
+}
+
+.photoright {
+  @include media-breakpoint-up(md) {
+    float: right;
+  }
+}
+
+.photocenter {
+  @include media-breakpoint-up(md) {
+    float: center;
+  }
+}
+
+.borderleft {
+  float: left;
+  @include media-breakpoint-down(xs) {
+    margin-right: .5em;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 120px;
+    margin-right: 1em;
+  }
+  @include media-breakpoint-up(md) {
+    width: 160px;
+    margin-right: 1em;
+    margin-left:  0;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-right: 5em;
+    margin-left:  5em;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-right: 4.25em;
+    margin-left:  4.25em;
+  }
+}
+
+.sonsandbrothers-title {
+  margin-top:  20px;
+  @include media-breakpoint-up(xs) {
+    font-size: 52pt;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 64pt;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 72pt;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 82pt;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 90pt;
+  }
+}
+
