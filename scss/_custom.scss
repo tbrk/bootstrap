@@ -1,5 +1,11 @@
 
+$content-width: 38em;
+
+$tp-navbar-height: 40px;
+
+// Page container
 div.tp-all {
+  width: 100%;
   @include make-container();
 }
 
@@ -23,7 +29,41 @@ div.tp-content-container {
   // max-width: 60em;
 }
 
+// Content
+.tp-content {
+  // Wrapper for page content to push down footer
+  @include media-breakpoint-up(md) {
+    height: auto;
+    min-height: 100%;
+    padding: 0 0 40px;    // Pad bottom by footer height
+    margin: 0 1em -40px;   // Negative indent footer by its height
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-right: 1.25em;
+    margin-left: 1.25em;
+  }
+
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+pre,
+table {
+  text-align: left;
+}
+
 // Printing pages
+
 @media print {
   div.tp-menu {
     display: none;
@@ -87,8 +127,10 @@ p {
 p,
 ul,
 ol,
+dl,
 dt,
 dd,
+.table,
 .table td,
 div.keywords,
 div.publisher,
@@ -98,6 +140,19 @@ div.centered-in-text,
 div.authors {
   max-width: 38em;
 }
+
+.keywords,
+.publisher,
+form,
+img,
+.authors {
+  max-width: $content-width;
+}
+
+form {
+  margin-bottom: 16px;
+}
+
 div.author {
   display: inline;
   white-space: nowrap;
@@ -105,6 +160,18 @@ div.author {
 
 div.in-text-wider {
   max-width: 48em;
+}
+
+address {
+  text-align: left;
+}
+
+.wider {
+  max-width: 48em;
+}
+
+.fullwidth {
+  max-width: none !important;
 }
 
 ol.in-list,
@@ -202,21 +269,25 @@ div.news {
 
 // Figures
 
-.figure {
+figure {
+  display: block;
+  max-width: $content-width;
   margin-top: 1em;
+  margin-right: auto;
   margin-bottom: 1em;
+  margin-left: 0;
   text-align: center;
   @include media-breakpoint-down(sm) {
     width: 100%;
   }
 }
 
-.figure-image {
+.figure > img {
   padding-bottom: .7em;
 }
 
-.figure-caption {
-  text-align: center;
+.caption {
+  margin-bottom: .8em;
 }
 
 .figure-main-caption {
@@ -270,6 +341,12 @@ div.tp-menu a:hover {
   text-decoration: none;
 }
 
+figcaption {
+  padding-top: .8em;
+  font-size: $figure-caption-font-size;
+  color: $figure-caption-color;
+}
+
 // Publications
 
 ul.bibentries {
@@ -283,6 +360,82 @@ ul.bibentries div.link a::before {
 ul.bibentries div.link a::after {
   content: "]";
 }
+
+.bibentries {
+  padding-left: .5em;
+  list-style-type: none;
+
+  .link {
+    padding-right: .3em;
+
+    a::before {
+      content: "[";
+    }
+
+    a::after {
+      content: "]";
+    }
+  }
+
+  li {
+    padding-bottom: 1em;
+  }
+
+  div {
+    display: inline;
+  }
+
+  .title {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .number::before {
+    content: "(";
+  }
+
+  .number::after {
+    content: ")";
+  }
+.paper {
+  h2 {
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 0;
+  }
+
+  .authors {
+    font-weight: bold;
+    text-align: left;
+  .date {
+    padding-top: 1em;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .keywords {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+    span {
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+
+  .publisher {
+    margin-bottom: 1em;
+    text-align: left;
+
+    .publisher-label {
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    .publisher {
+      font-style: italic;
+      font-weight: normal;
+    }
 
 ul.bibentries li {
   padding-bottom: 1em;
