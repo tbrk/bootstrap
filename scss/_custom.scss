@@ -1,5 +1,6 @@
 
 $content-width: 38em;
+$wide-content-width: 48em;
 
 $tp-navbar-height: 40px;
 
@@ -167,7 +168,7 @@ address {
 }
 
 .wider {
-  max-width: 48em;
+  max-width: $wide-content-width;
 }
 
 .fullwidth {
@@ -287,6 +288,7 @@ figure {
 }
 
 .caption {
+  margin-top: .5em;
   margin-bottom: .8em;
 }
 
@@ -345,6 +347,10 @@ figcaption {
   padding-top: .8em;
   font-size: $figure-caption-font-size;
   color: $figure-caption-color;
+}
+
+.ondropshadow {
+  margin-top: -3em;
 }
 
 // Publications
@@ -543,6 +549,17 @@ table.csvfile td {
   padding-left: .5em;
   background-color: #fff;
   border-width: 0;
+}
+
+// Code
+.fixgap::first-line {
+  line-height: 0;
+}
+
+pre {
+  max-width: $wide-content-width;
+  word-break: break-all;
+  white-space: pre-wrap;
 }
 
 // Manual pages
