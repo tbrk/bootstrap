@@ -1,6 +1,6 @@
 
-$content-width: 38em;
-$wide-content-width: 48em;
+$content-width: 610px; // 38em in main font
+$wide-content-width: 700px; // 48em in the main font
 
 $tp-navbar-height: 40px;
 
@@ -148,6 +148,10 @@ form,
 img,
 .authors {
   max-width: $content-width;
+}
+
+.lessimportant {
+  font-size: smaller;
 }
 
 form {
