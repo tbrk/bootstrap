@@ -291,6 +291,26 @@ figure {
   padding-bottom: .7em;
 }
 
+.img-screenshot-small {
+  @include media-breakpoint-up(sm) {
+    max-width: 400px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    @include img-fluid;
+  }
+}
+
+.img-screenshot-medium {
+  @include media-breakpoint-up(md) {
+    max-width: 500px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    @include img-fluid;
+  }
+}
+
 .caption {
   margin-top: .5em;
   margin-bottom: .8em;
