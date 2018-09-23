@@ -229,11 +229,16 @@ span.fingerprint {
   font-size: x-small;
 }
 
+.md5-checksum {
+  font-size: x-small;
+}
+
+
 div.centered-in-text {
   margin-bottom: .5em;
 }
 
-div.photo {
+.photo {
   @include media-breakpoint-down(xs) {
     padding-left: 2.5em;
   }
