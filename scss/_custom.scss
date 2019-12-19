@@ -311,6 +311,10 @@ address {
   transition: all .25s linear;
 }
 
+.anchorjs-link:hover {
+  text-decoration: none;
+}
+
 kbd {
   display: inline-block;
   margin: 0 .1em;
